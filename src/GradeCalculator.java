@@ -92,7 +92,7 @@ add(panel);
             float quiz3Value = Float.parseFloat(txtQuiz3.getText());
             
             if (quiz1Value <= 0 || quiz2Value <= 0 || quiz3Value <= 0) {
-                JOptionPane.showMessageDialog(null, "Please enter values greater than 0 for quizzes");
+                JOptionPane.showMessageDialog(null, "Please enter values greater than 0");
                 return; // Exit the method early if any quiz value is <= 0
             }
 
@@ -106,7 +106,7 @@ add(panel);
             GradeOutput output = new GradeOutput(stud);
             output.setVisible(true);
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null, "Please enter valid numbers for quizzes");
+            JOptionPane.showMessageDialog(null, "Please enter a valid numbers");
         }
     }
 });
